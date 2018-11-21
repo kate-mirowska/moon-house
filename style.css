@@ -1,0 +1,331 @@
+body {
+    color: #666666;
+    font-family: 'Montserrat', Helvetica, Arial, sans-serif;
+    padding-top: 0;
+    font-size: 16px;
+}
+
+section {
+    padding-top: 60px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+a {
+    color: #666;
+}
+
+a:hover {
+    color: #444;
+    text-decoration: none;
+}
+
+.navbar {
+    background: none;
+    background-color: rgba(0,0,0,.5);
+}
+
+.navbar-brand {
+    color: #bba491;
+    text-transform: uppercase;
+    text-shadow: 3px 3px 3px #000;
+    font-weight: 700;
+    font-size: 24px;
+}
+
+.navbar-brand .logo {
+    width: 40px;
+    padding-bottom: 5px;
+}
+
+.navbar-toggler:focus {
+    outline: none;
+}
+
+.navbar ul {
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.navbar-collapse {
+    text-align: right;
+    padding-right: 20px;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: #fff;
+    text-shadow: 3px 3px 3px #000;
+    font-weight: 700;
+    font-size: 16px;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover {
+    color: #fff;
+    opacity: 0.9;
+}
+
+.header__banner--wrapper {
+    padding-top: 0;
+    position: relative;
+}
+
+.header__banner--title {
+    position: absolute;
+    z-index: 1000;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 700;
+    border: 1px solid transparent;
+    background-color: rgba(0,0,0,0.5);
+    padding: 20px 0;
+    left: 0;
+    right: 0;
+}
+
+.header__banner--title * {
+    text-shadow: 3px 3px 3px #000;
+    font-weight: 700;
+}
+
+.header__banner--title h1 {
+    font-size: 2rem;
+}
+
+.header__banner--title h2 {
+    font-size: 1.8rem;
+    margin-bottom: .5rem;
+}
+
+.header__banner--title h3 {
+    font-size: 1.5rem;
+}
+
+.fotorama > * {
+    visibility: hidden;
+}
+
+.fotorama .fotorama__wrap {
+    visibility: visible;
+}
+
+.header__banner--wrapper .fotorama__col {
+    overflow: hidden;
+}
+
+.header__banner--wrapper .fotorama__outer--wrapper {
+    margin: 0 -20px;
+    overflow: hidden;
+}
+
+.header__banner--wrapper .fotorama__stage {
+    position: relative;
+}
+
+.header__banner--wrapper .fotorama__nav-wrap {
+    position: absolute;
+    bottom: 5%;
+    z-index: 10000;
+    left: 0;
+}
+
+.header__banner--wrapper .fotorama__nav--dots .fotorama__nav__frame {
+    width: 40px;
+    height: 30px;
+    margin-right: 20px;
+}
+
+.header__banner--wrapper .fotorama__dot {
+    width: 35px;
+    height: 10px;
+    position: relative;
+    border-radius: 0;
+    border: 2px solid #f2a921;
+    box-shadow: 1px 1px 3px #000;
+}
+
+.header__banner--wrapper .fotorama__nav__frame.fotorama__active .fotorama__dot {
+    background: #f2a921;
+    width: 35px;
+    height: 10px;
+}
+
+.gallery--wrapper h6,
+.footer--wrapper h6 {
+    display: none;
+}
+
+.gallery--wrapper .fotorama__wrap {
+    margin: 0 auto;
+}
+
+.facilities__description--wrapper {
+    text-align: center;
+}
+
+.facilities__description--wrapper p {
+    font-size: 14px;
+}
+
+.facilities__description--wrapper img {
+    width: 30px;
+    height: auto;
+    display: block;
+    margin: auto;
+    padding-bottom: 5px;
+    opacity: 0.8;
+}
+
+.features--wrapper .pricing .fa-angle-right {
+    color: #f2a921;
+}
+
+.features--wrapper .features .fa-check {
+    color: #3b6404;
+}
+
+.pricing,
+.directions--map {
+    padding-bottom: 30px;
+}
+
+.directions--map iframe {
+    width: 100%;
+}
+
+.footer--wrapper {
+    margin-bottom: 20px;
+}
+
+.footer--wrapper p {
+    margin-bottom: 0;
+}
+
+.footer--wrapper small {
+    font-size: 10px;
+}
+
+@media all and (min-width: 1024px) {
+    .navbar {
+        padding: 10px 30px;
+    }
+
+    .header__banner--title h1 {
+        font-size: 2.5rem;
+    }
+
+    .header__banner--title h2 {
+        font-size: 2rem;
+    }
+
+    .header__banner--title h3 {
+        font-size: 1.75rem;
+    }
+}
+
+@media all and (min-width: 768px) {
+    .header__banner--title {
+        top: 230px;
+    }
+
+    .header__banner--wrapper .fotorama__col {
+        min-height: 710px;
+        max-height: 100vh;
+    }
+
+    .header__banner--wrapper .fotorama__nav-wrap {
+        display: none;
+    }
+}
+
+@media all and (max-width: 768px) {
+    body {
+        font-size: 14px;
+    }
+
+    section {
+        padding-top: 50px;
+    }
+
+    .header__banner--title {
+        top: 150px;
+    }
+
+    .header__banner--wrapper .fotorama__col {
+        min-height: 300px;
+    }
+
+    .header__banner--wrapper .fotorama__nav-wrap {
+        display: block;
+    }
+}
+
+@media all and (max-width: 640px) {
+    .header__banner--title h1 {
+        font-size: 1.5rem;
+    }
+
+    .header__banner--title h2 {
+        font-size: 1.3rem;
+    }
+
+    .header__banner--title h3 {
+        font-size: 1rem;
+    }
+
+    .header__banner--wrapper .fotorama__nav-wrap {
+        bottom: 2%;
+    }
+}
+
+@media all and (max-width: 480px) {
+    .header__banner--title {
+        top: 120px;
+        width: 95%;
+        margin: 0 auto;
+        padding: 15px 0;
+        border-radius: 5px;
+    }
+
+    .header__banner--title h1 {
+        font-size: 1.3rem;
+    }
+
+    .header__banner--title h2 {
+        font-size: 1rem;
+        margin-bottom: 0;
+    }
+
+    .header__banner--title h3 {
+        display: none;
+    }
+
+    .header__banner--wrapper .fotorama__nav--dots .fotorama__nav__frame {
+        width: 20px;
+        height: 30px;
+        margin-right: 0;
+    }
+
+    .header__banner--wrapper .fotorama__dot {
+        width: 9px;
+        height: 8px;
+        position: relative;
+        border-radius: 5px;
+        border: 2px solid #f2a921;
+        box-shadow: 1px 1px 3px #000;
+    }
+
+    .header__banner--wrapper .fotorama__nav__frame.fotorama__active .fotorama__dot {
+        background: #f2a921;
+        width: 9px;
+        height: 8px;
+    }
+}
